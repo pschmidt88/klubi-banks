@@ -16,8 +16,12 @@ dependencies {
     implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
     implementation 'io.quarkus:quarkus-arc'
     implementation 'io.quarkus:quarkus-resteasy-reactive'
+    implementation "org.apache.poi:poi-ooxml:5.0.0"
+
+    testImplementation 'org.amshove.kluent:kluent:1.68'
     testImplementation 'io.quarkus:quarkus-junit5'
-    testImplementation 'io.rest-assured:rest-assured'
+    testImplementation 'io.rest-assured:rest-assured:4.4.0'
+    testImplementation 'io.rest-assured:kotlin-extensions:4.4.0'
 }
 
 group 'software.racoony'
