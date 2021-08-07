@@ -1,6 +1,6 @@
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version "1.4.32"
-    id "org.jetbrains.kotlin.plugin.allopen" version "1.4.32"
+    id 'org.jetbrains.kotlin.jvm' version "1.5.21"
+    id "org.jetbrains.kotlin.plugin.allopen" version "1.5.21"
     id 'io.quarkus'
 }
 
@@ -11,15 +11,15 @@ repositories {
 
 dependencies {
     implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
-    implementation 'io.quarkus:quarkus-resteasy-reactive-jackson'
-    implementation 'io.quarkus:quarkus-kotlin'
-    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
-    implementation 'io.quarkus:quarkus-arc'
-    implementation 'io.quarkus:quarkus-resteasy-reactive'
-    implementation 'com.opencsv:opencsv:4.1'
+    implementation 'io.quarkus:quarkus-resteasy-reactive-jackson:2.1.0.Final'
+    implementation 'io.quarkus:quarkus-kotlin:2.1.0.Final'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.21'
+    implementation 'io.quarkus:quarkus-arc:2.1.0.Final'
+    implementation 'io.quarkus:quarkus-resteasy-reactive:2.1.0.Final'
+    implementation 'com.opencsv:opencsv:5.5'
 
     testImplementation 'org.amshove.kluent:kluent:1.68'
-    testImplementation 'io.quarkus:quarkus-junit5'
+    testImplementation 'io.quarkus:quarkus-junit5:2.1.0.Final'
     testImplementation 'io.rest-assured:rest-assured:4.4.0'
     testImplementation 'io.rest-assured:kotlin-extensions:4.4.0'
 }
